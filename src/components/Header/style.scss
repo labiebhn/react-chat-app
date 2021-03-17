@@ -1,0 +1,45 @@
+@import '../../scss/colors';
+
+#Header {
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+  padding: 16px 24px;
+  box-shadow: $shadowBasic;
+  z-index: 10;
+  .user-back {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    margin-left: -12px;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      filter: brightness(10%);
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .user-ava {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .user-detail {
+    .activity {
+      color: $success;
+      font-size: .64rem;
+    }
+  }
+}

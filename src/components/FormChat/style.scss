@@ -1,0 +1,49 @@
+@import '../../scss/colors';
+
+#FormChat {
+  padding: 16px 24px;
+  font-size: .8rem;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  .form-container {
+    .input {
+      border: 1px solid $bgContainer;
+      border-radius: 18px;
+      font-size: .8rem;
+      padding: 12px;
+      width: 250px;
+      resize: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+  .submit {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .btn-submit {
+      width: 45px;
+      height: 45px;
+      overflow: hidden;
+      border-radius: 50%;
+      background-color: #ac9efe;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s;
+      &:hover {
+        filter: brightness(110%);
+      }
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+}

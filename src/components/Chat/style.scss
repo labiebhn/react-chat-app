@@ -1,0 +1,22 @@
+@import '../../scss/colors';
+
+#Chat {
+  margin: 16px 0px;
+  .container {
+    font-size: .8rem;
+    display: flex;
+    .chat-value {
+      background-color: $bgContainer;
+      padding: 8px;
+      border-radius: 8px 8px 8px 0px;
+    }
+  }
+  .me {
+    justify-content: flex-end;
+    .chat-value {
+      background-color: $primary;
+      color: white;
+      border-radius: 8px 8px 0px 8px;
+    }
+  }
+}
